@@ -1,12 +1,3 @@
-FROM node:10
-RUN npm install -g pug@latest
-RUN npm install -g pug-cli@latest
-RUN npm install -g coffeescript@latest
-RUN npm install -g constantinople@latest
-RUN npm install -g jstransformer@latest
-RUN npm install -g cryptiles@latest
-RUN npm install -g boom@latest
-RUN npm install -g hoek@latest
-RUN npm install -g minimatch@latest
-RUN npm install -g aglio@latest
+FROM alpine:3.5
+RUN apk -U add nodejs g++ make python; npm install -g aglio@2.3.0 jstransformer-coffee-script@1.1.0 jstransformer-stylus@1.3.0; apk del g++ make python
 ENTRYPOINT ["aglio"]
