@@ -1,18 +1,19 @@
 # docker-aglio
 
-Image that provides an Aglio installation for document generation.
+*Image that provides an Aglio installation for document generation.*
 
 A Imagem Docker Aglio provê a utilização em container do [Aglio Render](https://github.com/danielgtaylor/aglio) para documentação de API's [Blueprint](https://apiblueprint.org/).
 
-Obtenha esta imagem no [Dockerhub do Ceuma NTI](https://hub.docker.com/r/ceumanti/docker-aglio).
+Obtenha esta imagem no [Docker Hub do Ceuma NTI](https://hub.docker.com/r/ceumanti/docker-aglio).
 
 ### Como usar isto
 
-Você pode gerar a documentação para seu projeto com um único comenando, para isso existem somente alguns pré requisitos:
+Você pode gerar a documentação para seu projeto usando o Aglio com um único comando, para isso existem somente alguns pré requisitos:
 
-- precisa ter definido no seu projeto um arquivo de documentação com a extensão `.apib`.
-- precisa mapear para o diretório específico aonde o seu container mantém o projeto ou arquivo de documentação.
-Ex: seu o seu container mantém o projeto em `/app`, configure o comando para este diretório, se o container mantém o projeto para `/application`, configure o comando para este diretório.
+- É necessário ter definido no projeto um arquivo de documentação com a extensão `.apib`.
+- É necessário configurar o comando para um diretório específico aonde o seu container mantém o projeto ou arquivo de documentação.
+
+Ex: seu o seu container mantém o projeto em `/app`, configure o comando para este diretório, se o container mantém o projeto em `/application`, configure o comando para este diretório.
 
 O comando a seguir entende que o container mantém o projeto em `/application`. Para gerar a documentação execute o seguinte comando:
 
