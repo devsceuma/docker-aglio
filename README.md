@@ -14,6 +14,6 @@ Você pode gerar a documentação para seu projeto com um único comenando, para
 - precisa mapear para o diretório específico aonde o seu container mantém o projeto ou arquivo de documentação.
 Ex: seu o seu container mantém o projeto em `/app`, configure o comando para este diretório, se o container mantém o projeto para `/application`, configure o comando para este diretório.
 
-O comando a seguir entende que o container mantém o projeto em `/application`. Para gerar a documentação sexecute o seguinte comando:
+O comando a seguir entende que o container mantém o projeto em `/application`. Para gerar a documentação execute o seguinte comando:
 
 `docker run -v $PWD:/application ceumanti/docker-aglio:latest aglio -i ./application/app/docs/top-five-backend.apib --theme-full-width --no-theme-condense -o ./application/app/templates/apidocs/index.html`
