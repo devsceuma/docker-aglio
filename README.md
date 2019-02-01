@@ -9,7 +9,7 @@ Obtenha esta imagem no [Dockerhub do Ceuma NTI](https://hub.docker.com/r/ceumant
 ### Como usar isto
 
 Você pode gerar a documentação para seu projeto com um único comenando, para isso existem somente alguns pré requisitos:
-´
+
 - precisa ter definido no seu projeto um arquivo de documentação com a extensão `.apib`.
 - precisa mapear para o diretório específico aonde o seu container mantém o projeto ou arquivo de documentação.
 Ex: seu o seu container mantém o projeto em `/app`, configure o comando para este diretório, se o container mantém o projeto para `/application`, configure o comando para este diretório.
