@@ -15,4 +15,4 @@ Ex: seu o seu container mantém o projeto em `/app`, configure o comando para es
 
 O comando a seguir entende que o container mantém o projeto em `/application`. Para gerar a documentação execute o seguinte comando:
 
-`docker run -v $PWD:/application ceumanti/docker-aglio:latest aglio -i ./application/app/docs/top-five-backend.apib --theme-full-width --no-theme-condense -o ./application/app/templates/apidocs/index.html`
+`docker run -v $PWD:/application markteam/docker-aglio:latest aglio -i ./application/app/docs/doc-name.apib --theme-full-width --no-theme-condense -o ./application/app/templates/apidocs/index.html`
