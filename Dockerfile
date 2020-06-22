@@ -1,6 +1,6 @@
 FROM alpine:3.5
 
-WORKDIR /app
+WORKDIR /application
 
 RUN apk -U add \
     nodejs \
