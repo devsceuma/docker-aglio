@@ -16,3 +16,5 @@ Ex: caso o seu container mantenha o projeto em `/app`, configure o comando para 
 O comando a seguir entende que o container mantém o projeto em `/application`. Para gerar a documentação execute o seguinte comando:
 
 `docker run -it --rm -v $(pwd):/application -w /application markteam/docker-aglio:latest aglio -i ./application/app/docs/doc-name.apib --theme-full-width --no-theme-condense -o ./application/app/templates/apidocs/index.html`
+
+**OBS:** Certifique-se de que seu projeto contém um arquivo `doc-name.apib` em: `/app/docs/doc-name.apib`
