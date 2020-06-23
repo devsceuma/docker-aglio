@@ -18,3 +18,5 @@ O comando a seguir entende que o container mantém o projeto em `/application`. 
 `docker run -it --rm -v $(pwd):/application -w /application markteam/docker-aglio:latest aglio -i ./application/app/docs/doc-name.apib --theme-full-width --no-theme-condense -o ./application/app/templates/apidocs/index.html`
 
 **OBS:** Certifique-se de que seu projeto contém um arquivo `doc-name.apib` em: `/app/docs/doc-name.apib`
+
+**OBS:** Para mais informações consulte a documentação do [Aglio](https://github.com/danielgtaylor/aglio).
